@@ -1,6 +1,36 @@
 .🍎 {
-    text-align: center;
-    color: red;
-    font-size: 60px;
-    text-transform: capitalize;
+  text-align: center;
+  color: red;
+  font-size: 60px;
+  text-transform: capitalize;
 }
+
+/* id has the highest specificity, then class and lastly type selector */
+#text {
+  background-color: blue;
+}
+
+.text {
+  background-color: green;
+}
+
+p {
+  background-color: red;
+}
+
+/* p {
+    background-color: tomato;
+    background-color: gold;
+} */
+
+/* p {
+    background-color: yellow;
+}
+
+p {
+    background-color: blue
+}
+
+p {
+    background-color: purple;
+} */
