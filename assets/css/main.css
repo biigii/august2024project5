@@ -1,36 +1,79 @@
-.🍎 {
-  text-align: center;
-  color: red;
-  font-size: 60px;
-  text-transform: capitalize;
-}
-
-/* id has the highest specificity, then class and lastly type selector */
-#text {
-  background-color: blue;
-}
-
-.text {
-  background-color: green;
-}
-
-p {
-  background-color: red;
-}
-
-/* p {
-    background-color: tomato;
-    background-color: gold;
-} */
-
-/* p {
+.block {
     background-color: yellow;
 }
 
-p {
-    background-color: blue
+/* h3 {
+    background-color: purple;
+} */
+
+/* button {
+    background-color: red;
+} */
+
+/* .btn {
+    background-color: red;
+} */
+
+/* .footer-btn {
+    background-color: purple;
+    color: white;
+} */
+
+/* go to footer and get all the buttons inside it */
+/* footer button {
+    background-color: purple;
+    color: white
+} */
+
+footer .footer-btn {
+    background-color: purple;
 }
 
-p {
-    background-color: purple;
+/* h3 {
+    background-color: red;
+} */
+
+/* .sub-heading {
+    background-color: red;
+} */
+
+/* get the h3 which has the class of sub-heading */
+h3.sub-heading {
+    background-color: pink;
+}
+
+h2.sub-heading {
+    background-color: orange;
+}
+
+/* find any <article> tag which has class of block */
+/* then inside it get the <h3> */
+article.block h3 {
+    font-size: 40px;
+    color: red;
+}
+
+/* .content {
+    background-color: white;
+} */
+
+/* article.block p {
+    background-color: green
+} */
+
+article.block p.content {
+    background-color: lightgreen;
+}
+
+article.block .inner-block button#btn {
+    background-color: orange;
+}
+
+/* html body main article.block .inner-block button#btn {
+    background-color: red;
+} */
+
+/* don't use ids for styling */
+/* #btn {
+    background-color: orange;
 } */
