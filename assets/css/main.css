@@ -1,79 +1,73 @@
-.block {
-    background-color: yellow;
-}
 
-/* h3 {
-    background-color: purple;
+/* we use specificity to decide which css rule applies */
+
+/* id-class-type */
+
+/* 1-0-0 */
+/* #heading {
+  color: green;
 } */
 
-/* button {
-    background-color: red;
+/* 0-1-0 */
+/* .heading {
+  color: pink;
 } */
 
-/* .btn {
-    background-color: red;
+/* 0-0-1 */
+/* h2 {
+  color: red;
 } */
 
-/* .footer-btn {
-    background-color: purple;
-    color: white;
-} */
-
-/* go to footer and get all the buttons inside it */
-/* footer button {
-    background-color: purple;
-    color: white
-} */
-
-footer .footer-btn {
-    background-color: purple;
-}
-
-/* h3 {
-    background-color: red;
-} */
-
-/* .sub-heading {
-    background-color: red;
-} */
-
-/* get the h3 which has the class of sub-heading */
-h3.sub-heading {
-    background-color: pink;
-}
-
-h2.sub-heading {
-    background-color: orange;
-}
-
-/* find any <article> tag which has class of block */
-/* then inside it get the <h3> */
-article.block h3 {
-    font-size: 40px;
-    color: red;
-}
-
-/* .content {
-    background-color: white;
-} */
-
-/* article.block p {
-    background-color: green
-} */
-
-article.block p.content {
+/* 0 1 1 */
+h2.heading {
     background-color: lightgreen;
 }
 
-article.block .inner-block button#btn {
+/* 1 2 1 */
+section.block .heading#heading {
+    background-color: yellow;
+}
+
+/* 1 1 1 */
+h2.heading#heading {
+    background-color: blue;
+}
+
+/* 0 2 2 */
+section.block h2.heading {
+    background-color: red;
+}
+
+/* 0 1 1 */
+.block h2 {
+    background-color: pink;
+}
+
+/* 1 1 1 */
+.block h2#heading {
+    background-color: purple;
+}
+
+/* 2 1 2 */
+section#block p#text.text {
+    background-color: yellow;
+}
+
+/* 1 3 2*/
+section.block#block .content p.text {
     background-color: orange;
 }
 
-/* html body main article.block .inner-block button#btn {
-    background-color: red;
-} */
+/* 1 3 1*/
+.block .content p.text#text {
+    background-color: purple;
+}
 
-/* don't use ids for styling */
-/* #btn {
-    background-color: orange;
-} */
+p {
+    background-color: green !important;
+    color: pink;
+}
+
+
+
+
